@@ -1,0 +1,53 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #003366;
+    color: goldenrod;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #004080;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: goldenrod;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #0059b3;
+    color: #fff;
+}
+main {
+    padding: 20px;
+}
+h1, h2 {
+    color: #003366;
+}
+p {
+    line-height: 1.8;
+}
+footer {
+    background-color: #003366;
+    color: goldenrod;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
