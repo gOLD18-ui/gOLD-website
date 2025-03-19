@@ -6,73 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NRI & Elderly Access - gOLD</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #f0faff, #d9e8f5);
-      color: #333;
-      padding: 20px;
-      animation: fadeIn 2s;
-    }
-    h1 {
-      text-align: center;
-      color: #0b3d91;
-      animation: slideDown 1.5s forwards;
-    }
-    .section {
-      background-color: #fff;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 900px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
+    body { font-family: Arial, sans-serif; background: linear-gradient(to right, #f0faff, #d9e8f5); color: #333; padding: 20px; animation: fadeIn 1.2s ease-out; }
+    h1 { text-align: center; color: #0b3d91; animation: slideDown 1s ease-out forwards; }
+    .section { background-color: #fff; padding: 20px; margin: 20px auto; max-width: 900px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
     .section:hover { transform: scale(1.02); }
     .section h2 { color: #004080; }
     .section p { line-height: 1.7; }
-    .login-box {
-      background-color: #eef3fa;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    input[type="text"], input[type="password"] {
-      width: 90%;
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    input[type="submit"] {
-      background-color: #004080;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+    .login-box { background-color: #eef3fa; padding: 20px; border-radius: 8px; margin-top: 20px; }
+    input[type="text"], input[type="password"] { width: 90%; padding: 12px; margin: 8px 0; border-radius: 5px; border: 1px solid #ccc; }
+    input[type="submit"] { background-color: #004080; color: #fff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; }
     input[type="submit"]:hover { background-color: #003366; }
-    a.button {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #004080;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 15px;
-      transition: 0.3s;
-    }
+    a.button { display: inline-block; padding: 12px 25px; background: #004080; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 15px; transition: 0.3s; }
     a.button:hover { background-color: #003366; transform: scale(1.05); }
     @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
     @keyframes slideDown { from {transform: translateY(-50px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      padding-top: 20px;
-    }
+    footer { margin-top: 50px; text-align: center; font-size: 14px; color: #555; padding-top: 20px; }
   </style>
 </head>
 <body>
@@ -81,26 +29,45 @@
 
   <div class="section">
     <h2>Secure NRI Login</h2>
-    <p>NRIs can securely log in to manage and track their parents' legal matters, property disputes, and elder care requirements directly from anywhere in the world.</p>
+    <p>NRIs can securely log in to monitor their parents' legal matters, book lawyers, handle property disputes, and manage elder care remotely from anywhere.</p>
     <div class="login-box">
       <form>
         <input type="text" placeholder="Enter NRI User ID" required><br>
         <input type="password" placeholder="Enter Password" required><br>
-        <input type="submit" value="Login">
+        <input type="submit" value="NRI Login">
       </form>
     </div>
   </div>
 
   <div class="section">
-    <h2>Monitor Elderly Legal & Lifestyle Status</h2>
-    <p>Check case updates, book lawyers, schedule medical appointments, and send instant messages to the support team. Authorize power of attorney directly through this panel.</p>
-    <a class="button" href="contact.html">Authorize / Contact Support</a>
+    <h2>Elderly Login for Case & Health Tracking</h2>
+    <p>Elderly users can log in to access their case status, health reminders, book consultations, and connect easily with their family or advocates.</p>
+    <div class="login-box">
+      <form>
+        <input type="text" placeholder="Enter Elderly ID" required><br>
+        <input type="password" placeholder="Enter Password" required><br>
+        <input type="submit" value="Elderly Login">
+      </form>
+    </div>
+  </div>
+
+  
+  <div class="section">
+    <h2>Track Case & Medical Updates</h2>
+    <p>NRIs and Elderly can view real-time case progress, medical appointment status, and receive updates instantly through our platform.</p>
+    <a class="button" href="contact.html">Check Updates</a>
   </div>
 
   <div class="section">
     <h2>Real-Time Video & Audio Interaction</h2>
-    <p>Connect with elders, lawyers, and doctors via video conferencing for real-time discussions and monitoring. Stay connected even while overseas.</p>
+    <p>Our platform allows NRIs, lawyers, and elders to connect directly through video/audio calls for real-time case discussions, health checkups, or consultations.</p>
     <a class="button" href="contact.html">Start Video Call</a>
+  </div>
+
+  <div class="section">
+    <h2>Authorize Power of Attorney</h2>
+    <p>NRIs can easily authorize power of attorney digitally, making property handling and other legal matters hassle-free.</p>
+    <a class="button" href="contact.html">Authorize Now</a>
   </div>
 
   <footer>
