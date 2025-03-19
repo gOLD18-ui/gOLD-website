@@ -4,37 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to gOLD</title>
+  <title>gOLD - Home</title>
   <style>
     body {
-      background: linear-gradient(to right, #D2A679, #D2A679);
       font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #eacda3, #d6ae7b);
+      color: #333;
       text-align: center;
       padding: 50px;
-      color: #4B0082;
+      animation: fadeIn 0.8s ease-in;
     }
     h1 {
-      font-size: 36px;
+      color: #4b2e83;
+      animation: slideIn 0.8s forwards;
+    }
+    .tagline {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 30px;
       font-weight: bold;
     }
-    p {
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
-    .btn {
+    a {
       display: inline-block;
-      background-color: #5D3A9B;
-      color: #fff;
-      padding: 15px 30px;
       margin: 10px;
+      padding: 12px 25px;
       text-decoration: none;
+      background-color: #4b2e83;
+      color: #fff;
       border-radius: 8px;
-      font-size: 18px;
-      transition: transform 0.2s ease;
+      transition: background-color 0.3s, transform 0.3s;
     }
-    .btn:hover {
-      transform: scale(1.05);
+    a:hover {
+      background-color: #372060;
+      transform: scale(1.1);
     }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideIn { from { transform: translateY(-30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
     footer {
       margin-top: 50px;
       font-size: 14px;
@@ -43,16 +48,19 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to gOLD</h1>
-  <p>AI-powered legal and lifestyle assistance for elders.<br>Navigate to services below:</p>
+  <h1>gOLD</h1>
+  <div class="tagline">Go... Old... GOLD ⭐ - Empowering Elders with Legal & Lifestyle Care</div>
 
-  <a href="legalaid.html" class="btn">Legal Aid</a>
-  <a href="login.html" class="btn">Login</a>
-  <a href="medical.html" class="btn">Medical</a>
-  <a href="lifestyle.html" class="btn">Lifestyle</a>
-  <a href="subscription.html" class="btn">Subscription</a>
-  <a href="contact.html" class="btn">Contact</a>
+  <p>AI-powered legal and lifestyle assistance for elders. Navigate to services below:</p>
+  <a href="legal.html">Legal Aid</a>
+  <a href="nri.html">NRI / Elderly Login</a>
+  <a href="medical.html">Medical</a>
+  <a href="lifestyle.html">Lifestyle</a>
+  <a href="subscription.html">Subscription</a>
+  <a href="contact.html">Contact</a>
 
-  <footer>© 2025 gOLD | Email: gOLDlegal18@gmail.com</footer>
+  <footer>
+    &copy; 2025 gOLD - All Rights Reserved | Email: gOLDlegal18@gmail.com
+  </footer>
 </body>
 </html>
